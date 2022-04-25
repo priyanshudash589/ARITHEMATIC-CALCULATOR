@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="tut21.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div id="inview">        
+        <center><input type="text" name="" id="inpv" value=""></center>
+               
+        <center><button id="calca" onclick="calc()">CALCULATE</button></center>
+        
+    </div>
+    <div id="input">
+       
+        <center>
+        <button id="#0" onclick="zero()">0</button>
+        <button id="#1" onclick="one()">1</button>
+        <button id="#2" onclick="two()">2</button>
+    </center>
+        
+        <center>
+        <button id="#3"  onclick="three()">3</button>
+        <button id="#4" onclick="four()">4</button>
+        <button id=" #5" onclick="five()">5</button>
+    </center>
+        
+        <center>
+        <button id=" #6" onclick="six()">6</button>
+        <button id="#7 " onclick="seven()">7</button>
+        <button id="#8 " onclick="eight()">8</button>
+    </center>
+        <center>
+            <button id="dot" onclick="dot()">.</button>
+        <button id="#9 " onclick="nine()">9</button>
+        <button id="dzero" onclick="dzero()">00</button>
+    </center>
+        
+        <center>
+        <button id="#+ " onclick="plus()">+</button>
+        <button id="#- "  onclick="sub()">-</button>
+        <button id="eq" onclick="calc()">=</button>
+    </center>
+        
+        <center>
+        <button id="#* " onclick="mult()">*</button>
+        <button id="#/ " onclick="divd()">/</button>
+        <button id="#% " onclick="rem()">%</button>
+    </center>
+    <center>
+        <button id="#es" onclick="esc()">C</button>
+        <button id="#cl" onclick="clr()">AC</button>
+     </center>
+        
+        
+       
+    </div>
+
+    <script>
+        function dzero(){
+            a = document.getElementById("inpv").value + "00";    /*reading value from input*/
+            document.getElementById("inpv").value = a;         /*writing the value to show in the output*/
+        }
+        function dot(){
+            a = document.getElementById("inpv").value + ".";    /*reading value from input*/
+            document.getElementById("inpv").value = a;         /*writing the value to show in the output*/
+        }
+        function zero(){
+            a = document.getElementById("inpv").value + "0";    /*reading value from input*/
+            document.getElementById("inpv").value = a;         /*writing the value to show in the output*/
+        }
+        function one(){
+            a = document.getElementById("inpv").value + "1";
+            document.getElementById("inpv").value = a;
+        }
+
+        function two(){
+            a = document.getElementById("inpv").value + "2";
+            document.getElementById("inpv").value = a;
+        }
+        function three(){
+            a = document.getElementById("inpv").value + "3";
+            document.getElementById("inpv").value = a;
+        }
+        function four(){
+            a = document.getElementById("inpv").value + "4";
+            document.getElementById("inpv").value = a;
+        }
+        function five(){
+            a = document.getElementById("inpv").value + "5";
+            document.getElementById("inpv").value = a;
+        }
+        function six(){
+            a = document.getElementById("inpv").value + "6";
+            document.getElementById("inpv").value = a;
+        }
+        function seven(){
+            a = document.getElementById("inpv").value + "7";
+            document.getElementById("inpv").value = a;
+        }
+        function eight(){
+            a = document.getElementById("inpv").value + "8";
+            document.getElementById("inpv").value = a;
+        }
+        function nine(){
+            a = document.getElementById("inpv").value + "9";
+            document.getElementById("inpv").value = a;
+        }
+        function plus(){
+            a = document.getElementById("inpv").value + "+";
+            document.getElementById("inpv").value = a;
+        }
+        function sub(){
+            a = document.getElementById("inpv").value + "-";
+            document.getElementById("inpv").value = a;
+        }
+        function divd(){
+            a = document.getElementById("inpv").value + "/";
+            document.getElementById("inpv").value = a;
+        }
+        function mult(){
+            a = document.getElementById("inpv").value + "*";
+            document.getElementById("inpv").value = a;
+        }
+        function rem(){
+            a = document.getElementById("inpv").value + "%";
+            document.getElementById("inpv").value = a;
+        }
+        function calc(){
+            a = document.getElementById("inpv").value;
+            eval("res = "+a);
+            document.getElementById("inpv").value = res;
+        }
+
+        function esc(){
+            a = document.getElementById("inpv").value;
+            l = a.length;
+            a = a.slice(0,l-1);
+            document.getElementById("inpv").value = a;
+        }
+        function clr(){
+            document.getElementById("inpv").value = "";
+
+        }
+        
+    </script>
+
+</body>
+</html>

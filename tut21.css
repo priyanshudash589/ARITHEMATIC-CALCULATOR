@@ -1,0 +1,32 @@
+#inpv{
+width:260px;
+}
+#calca{
+    width:268px;
+}
+button{
+    width:86px;
+    margin:2px 0px 2px 0px;
+    padding: 4px 4px 4px 4px;
+    border-radius: 5px;
+    cursor:pointer;
+    background-image: linear-gradient(#B8FFF9,white,#533E85);
+    border:solid #f06df0;
+}
+input{
+    padding:15px 5px 5px 5px;
+    margin-bottom: 10px;
+}
+body{
+    margin-top: 65px;
+    margin-bottom: 87px;
+    background-image: url(/5172658.jpg);
+    background-repeat: no-repeat;
+    background-size:100%;
+    padding: 0;
+}
+
+button:active{
+    background-color: #ec8739;
+
+}
